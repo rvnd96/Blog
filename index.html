@@ -7,6 +7,59 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>Woow</h1>
+	<header>
+		<a href="#" class="logo">My Blog</a>
+		<div class="menuToggle"></div>
+	</header>
+	<ul class="navigation">
+		<li><a href="#home">Home</a></li>
+		<li><a href="#about">About</a></li>
+		<li><a href="#">Post</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+
+	<!-- Banner | START -->
+	<section class="banner" id="home">
+		<img src="images/banner.jpg" alt="banner" class="cover">
+		<div class="contentBx">
+			<h2>The soul of the world</h2>
+			<h4>A simple blog website</h4>
+			<a href="#about" class="btn">About us</a>
+		</div>
+	</section>
+	<!-- Banner | END -->
+
+	<!-- About | START -->
+	<section class="about" id="about">
+		<div class="title">
+			<h2>About us</h2>
+		</div>
+		<div class="contentBx">
+			<div class="content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad ullam asperiores minus provident perferendis ut velit placeat dolorum voluptatum, est maiores illum saepe aperiam deleniti magnam porro atque vel ipsum cupiditate quaerat. Esse repellat numquam distinctio, sit. Doloremque atque, voluptas adipisci perferendis perspiciatis amet. Earum in laudantium molestias perspiciatis, quisquam quibusdam placeat omnis, harum, nemo tempora architecto accusamus alias enim suscipit repudiandae cupiditate minima doloribus ullam aperiam. Modi error quia nisi similique sunt, ex quos sed quidem voluptatibus facilis delectus excepturi commodi. Ratione quam rem ab eveniet ducimus. <br><br>Soluta, rem! Sint aliquam, et dolorem dolorum quae a similique molestiae quisquam repellendus, eum iusto suscipit nam temporibus culpa fugit consectetur praesentium placeat ipsum distinctio explicabo blanditiis ab quasi quas. Odit asperiores a possimus repellendus fugiat facere nemo cupiditate perspiciatis deleniti ipsa velit, exercitationem nam est laborum sint accusantium impedit eum provident eos autem incidunt dignissimos quisquam et. Cumque in modi accusantium quia dolores, veritatis eos aperiam praesentium quos eum officiis soluta fuga facilis atque quam sit saepe quibusdam tempore doloremque odio, eius repellendus? Laboriosam quisquam nemo magnam, nisi hic eligendi earum perspiciatis, in quos, dolorem vero repellat, consequatur. Unde reprehenderit amet accusantium rem ut nisi magnam, vel qui?</p>
+			</div>
+			<div class="content">
+				<div class="imgBx">
+					<img src="images/img1.jpg" alt="image 1" class="cover">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- About | END -->
+
+	<script>
+		var menuToggle = document.querySelector('.menuToggle');
+		var navigation = document.querySelector('.navigation');
+		menuToggle.onclick = function() {
+			menuToggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+
+		window.addEventListener('scroll', function(){
+			var header = document.querySelector('header');
+			header.classList.toggle('sticky', window.scrollY > 0);
+		})
+
+	</script>
 </body>
 </html>
