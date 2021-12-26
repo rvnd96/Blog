@@ -200,6 +200,18 @@
 			header.classList.toggle('sticky', window.scrollY > 0);
 		})
 
+		function toggleMennu() {
+			menuToggle.classList.remove('active');
+			navigation.classList.remove('active');
+		}
+
+		var anchors = document.querySelectorAll('.navigation li a');
+		
+		for (var i=0; i < anchors.length; i++) {
+			anchors[i].addEventListener('click', toggleMennu);
+		}
+		
+
 	</script>
 </body>
 </html>
