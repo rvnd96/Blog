@@ -403,3 +403,48 @@ footer .footerMenu li a {
 	letter-spacing: 1px;
 	text-align: center;
 }
+
+@media (max-width: 991px) {
+	header {
+		padding: 20px;
+	}
+	header.sticky {
+	    padding: 10px 20px;
+	}
+	section {
+		padding: 20px;
+	}
+	.banner .contentBx {
+		padding: 40px 30px;
+	}
+	.about .contentBx {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.post .contentBx {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.post .contentBx .postColumn .postBox,
+	.post .contentBx .postColumn .postBox.extraHeight {
+		height: 300px;
+	}
+	.contact .contactForm .row {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	footer {
+		padding: 40px 20px;
+	}
+	footer .footerMenu {
+	    justify-content: center;
+	    flex-direction: column;
+	    align-items: center;
+	}
+	footer .footerMenu li a {
+		margin:  5px 0;
+	}
+	.title {
+		padding-top: 50px;
+	}
+	.mgt60 {
+	    margin-top: 0px;
+	}
+}
